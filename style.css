@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #07070a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background:
+    radial-gradient(circle at top, rgba(120, 0, 255, 0.5), transparent 40%),
+    linear-gradient(135deg, #050505, #161622, #090909);
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #00e5ff, #9b5cff, #ff3d81);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #d6d6d6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00e5ff, #9b5cff);
+  color: #ffffff;
+  padding: 15px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(155, 92, 255, 0.7);
+}
+
+.section {
+  padding: 70px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00e5ff;
+}
+
+.section p {
+  font-size: 19px;
+  color: #d0d0d0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 70px 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: #12121c;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 22px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  color: #ff3d81;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #cfcfcf;
+}
+
+.dark {
+  background: #101018;
+  border-radius: 25px;
+}
+
+.steps {
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+}
+
+.steps p {
+  margin-bottom: 12px;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #050505;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
